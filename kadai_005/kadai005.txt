@@ -1,0 +1,42 @@
+(py310) j@KEISER:~$ mkdir git_challenge
+(py310) j@KEISER:~$ cd git_challenge/
+(py310) j@KEISER:~/git_challenge$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/j/git_challenge/.git/
+(py310) j@KEISER:~/git_challenge$ vi  hello_world.txt
+(py310) j@KEISER:~/git_challenge$ git add .
+(py310) j@KEISER:~/git_challenge$ git commit -m "1st"
+[master (root-commit) e6ebcae] 1st
+ 1 file changed, 2 insertions(+)
+ create mode 100644 hello_world.txt
+(py310) j@KEISER:~/git_challenge$ vi  hello_world.txt 
+(py310) j@KEISER:~/git_challenge$ git add .
+(py310) j@KEISER:~/git_challenge$ git commit -m "2nd"
+[master ada643f] 2nd
+ 1 file changed, 1 insertion(+)
+(py310) j@KEISER:~/git_challenge$ git diff
+(py310) j@KEISER:~/git_challenge$ git status
+ブランチ master
+nothing to commit, working tree clean
+(py310) j@KEISER:~/git_challenge$ git log
+commit ada643f4b56d68223111306d51d3e4983a53315c (HEAD -> master)
+Author: jupiter-san <jupiter_san@triton.ocn.ne.jp>
+Date:   Wed Aug 7 21:33:54 2024 +0900
+
+    2nd
+
+commit e6ebcae8f047587f132534077ce845a23becd384
+Author: jupiter-san <jupiter_san@triton.ocn.ne.jp>
+Date:   Wed Aug 7 21:32:39 2024 +0900
+
+    1st
+
